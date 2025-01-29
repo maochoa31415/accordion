@@ -1,0 +1,66 @@
+:root {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #424242;
+}
+
+.main-container {
+  width: 70%;
+  padding: 24px 0;
+  margin: 0 auto;
+}
+
+.main-container header .title,
+.main-container header .subtitle {
+  font-weight: 400;
+}
+
+.main-container header .title {
+  margin: 0;
+}
+
+.main-container header .subtitle {
+  margin: 12px 0;
+}
+
+.acordion {
+  --border-radius: 12px;
+}
+
+.acordion .acordion-item .acordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #424242;
+  padding: 8px 12px;
+  margin: 0 0 6px 0;
+  border-radius: var(--border-radius);
+  color: #fafafa;
+  cursor: pointer;
+  user-select: none;
+}
+
+.acordion .acordion-item .acordion-header .acordion-title {
+  margin: 0;
+  font-weight: 400;
+}
+
+.acordion .acordion-item .acordion-header svg {
+  fill: currentColor;
+  height: 24px;
+}
+
+.acordion .acordion-item .accordion-collapsible {
+  height: 0;
+  overflow: hidden;
+  transition: height 200ms ease;
+}
+
+.acordion .acordion-item .accordion-collapsible .accordion-content {
+  padding: 12px;
+  border: solid 2px #424242;
+  border-radius: var(--border-radius);
+}
